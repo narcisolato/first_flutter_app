@@ -78,6 +78,75 @@ class App extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(height: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    "Wallets",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 32,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  Text(
+                    "View All",
+                    style: TextStyle(
+                      color: Colors.white.withAlpha(200),
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 30),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'EUR',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(height: 12),
+                          Row(
+                            children: [
+                              Text(
+                                '5 428',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              SizedBox(width: 5),
+                              Text(
+                                'EUR',
+                                style: TextStyle(
+                                  color: Colors.white.withAlpha(200),
+                                  fontSize: 18,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
