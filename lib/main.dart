@@ -1,3 +1,4 @@
+import 'package:first_app/widget/button.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,12 +14,10 @@ class App extends StatelessWidget {
         //   title: Text('first app')
         // ),
         backgroundColor: Color(0xFF181818),
-        // body: Center(
-        //   child: Text('hello flutter'),
-        // ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 40),
               Row(
@@ -43,6 +42,39 @@ class App extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                ],
+              ),
+              SizedBox(height: 40),
+              Text(
+                'Total Balance',
+                style: TextStyle(
+                  color: Colors.white.withAlpha(200),
+                  fontSize: 18,
+                ),
+              ),
+              SizedBox(height: 5),
+              Text(
+                '\$3 141 592',
+                style: TextStyle(
+                  color: Colors.white.withAlpha(200),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 36,
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Button(
+                    text: "transfer",
+                    backgroundColor: Colors.amber,
+                    textColor: Colors.black,
+                  ),
+                  Button(
+                    text: "request",
+                    backgroundColor: Color(0xFF1F2123),
+                    textColor: Colors.white,
                   ),
                 ],
               ),
