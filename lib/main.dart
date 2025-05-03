@@ -11,6 +11,15 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        textTheme: TextTheme(
+          titleLarge: TextStyle(
+            color: Colors.red.withAlpha(200),
+            fontWeight: FontWeight.bold,
+            fontSize: 36,
+          ),
+        ),
+      ),
       home: Scaffold(
         // appBar: AppBar(
         //   title: Text('first app')
