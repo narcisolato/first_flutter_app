@@ -1,3 +1,4 @@
+import 'package:first_app/stateful/stateful.dart';
 import 'package:first_app/widget/button.dart';
 import 'package:first_app/widget/currency_card.dart';
 import 'package:flutter/material.dart';
@@ -127,6 +128,7 @@ class App extends StatelessWidget {
                   inverted: false,
                   order: 2,
                 ),
+                StatefulButton(),
               ],
             ),
           ),
