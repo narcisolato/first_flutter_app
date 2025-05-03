@@ -137,7 +137,15 @@ class App extends StatelessWidget {
                   inverted: false,
                   order: 2,
                 ),
-                StatefulButton(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    StatefulButton(),
+                    StatefulButton(),
+                    StatefulButton(),
+                  ],
+                ),
               ],
             ),
           ),
